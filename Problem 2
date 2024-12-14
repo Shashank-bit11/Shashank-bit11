@@ -1,0 +1,11 @@
+def generate_series(a):
+    series = []
+    for i in range(a):
+        series.append(2 * i + 1)
+    return ", ".join(map(str, series))
+
+# Input
+a = int(input("Enter a value for a: "))
+
+# Output
+print(generate_series(a))
